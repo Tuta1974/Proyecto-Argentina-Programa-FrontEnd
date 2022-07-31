@@ -1,13 +1,15 @@
-.row {
-  padding: 30px;
+.row{
+  font-family: 'JetBrains Mono', monospace;
+  padding: 20px;
 }
-
-div {
-  background-color: grey ;
-
+div{
+  background: #2C3639;
 }
-
-h2, h3 {
-  
+h1, h3{
   display: inline;
+}
+
+#botonNueva {
+  margin:10px;
+
 }

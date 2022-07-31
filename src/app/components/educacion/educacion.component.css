@@ -1,13 +1,25 @@
 .row {
-  padding: 30px;
+  font-family: 'JetBrains Mono', monospace;
+  padding: 20px;
 }
 
 div {
-  background-color: grey ;
+  background-color: #2C3639;
 
 }
 
 h2, h3 {
 
   display: inline;
+}
+#botonNueva {
+  margin: 10px;
+}
+card {
+  font: white;
+  background-color: black;
+  border-radius: 90px;
+  margin:10px;
+  padding:20px;
+
 }

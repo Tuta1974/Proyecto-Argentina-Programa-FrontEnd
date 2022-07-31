@@ -1,33 +1,25 @@
-<div class="row">
-  <h1>Experiencia laboral</h1>
-  <div class="col-lg-11 ms-5 ">
-    <ul>
-      <li>
-        <h2>Trabajo 1</h2> - <h3>(years)</h3>
-      </li>
-      <p>
-        Unicef Argentina
-      </p>
-    </ul>
 
-    <ul>
-      <li>
-        <h2>Trabajo 2</h2> - <h3>(years)</h3>
-      </li>
-      <p>
-        Radio Colonia
-      </p>
-    </ul>
-    <ul>
-      <li>
-        <h2>Trabajo 3</h2> - <h3>(years)</h3>
-      </li>
-      <p>
-        Radio Buenos Aires
-      </p>
-    </ul>
+  <div class="row">
+    <h2 class="bg-dark text-light">Experiencia Laboral</h2>
+    <div>
+      <button type="button" id="botonNueva" class="btn btn-dark mb-lg-4 " routerLink="/nuevaexp" *ngIf="isLogged">
+        <i class="bi bi-plus-square"> Nueva Experiencia</i>
+      </button>
+    </div>
+
+    <div class="card col-5 p-2 m-2" *ngFor="let Experiencia of expe">
+      <div class="card-header d-flex justify-content-between bg-dark  text-light" >
+        <h3>{{Experiencia.nombreE}}</h3>
+        <button class="btn btn-secondary" routerLink="/editEdu/{{Experiencia.id}}" *ngIf="isLogged" >
+          <i class="bi bi-pencil-fill"></i></button>
+        <button class="btn btn-danger" (click)="delete(Experiencia.id)" *ngIf="isLogged">
+          <i class="bi bi-trash-fill"></i></button>
+      </div>
+      <div class="card-body bg-secondary">
+        <h5 class="card-title">{{Experiencia.descripcionE}}</h5>
+        <p class="card-text">Iniciada en el año {{Experiencia.iniExp}} y finalizada en {{Experiencia.finExp}} </p>
+
+      </div>
+    </div>
   </div>
 
-
-
-</div>

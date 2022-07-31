@@ -1,43 +1,82 @@
+
 .row {
-   padding: 20px;
-  }
-  div {
-    background-color: gray;
-    text-align: center;
-  }
-
-  @media (min-width: 576px) {
-    #fotoPerfil {
-      position: absolute;
-      width: 12%;
-      border-radius: 100%;
-      box-shadow: 3px 3px 3px black;
-      left: 5%;
-      top: 50%;
-    }
-
-  }
-
-  @media (max-width: 575px) {
-    #fotoPerfil {
-      position: absolute;
-      width: 25%;
-      border-radius: 100%;
-      box-shadow: 3px 3px 3px black;
-      left: 40%;
-      top: 50%;
-    }
-
-  }
-
-
-
-#nombre {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  margin-top: 35px;
-
+  width: auto;
+  font-family: 'JetBrains Mono', monospace;
+  background-color: grey;
+  padding: 20px;
 }
+ 
+ 
+  img{
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    box-shadow: 3px 3px 3px black;
+}
+
+
+@media (min-width: 576px){
+  #fotodeperfil{
+      position: absolute;
+      width:10%;
+      border-radius: 100%;
+      box-shadow: 3px 3px 3px grey;
+      left: 1%;
+      top:370px;
+  }
+}
+@media (max-width: 575px){
+  #fotodeperfil{
+      position: absolute;
+      width: 30%;
+      border-radius: 100%;
+      box-shadow: 3px 3px 3px grey;
+      left: 1%;
+      top:400px;
+  }
+}
+
+
+#nombre{
+  font-weight: bold;
+  margin-top: 30px;
+}
+@media (min-width: 576px){
+  .card{
+      position: absolute;
+      width:80%;
+      box-shadow: 3px 3px 3px grey;
+      left: 15%;
+      top:500px;
+  }
+}
+@media (max-width: 575px){
+  .card{
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      box-shadow: 3px 3px 3px grey;
+      left:50%;
+      top:300px;
+  }
+}
+
+@media(max-width:575px){
+  #nombre{
+    position:relative;
+    font-size: 10px;
+    width: 10%;
+
+  }
+  h4 {
+    font-size: 15px;
+  }
+}
+
+
+
 
 
 

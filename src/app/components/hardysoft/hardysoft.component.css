@@ -1,4 +1,28 @@
-.row {
-  background-color: gray;
+.container {
+  width: auto;
+}
+
+.row{
+
+  background-color:#3F4E4F;
+  color: white;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 20px;
   padding: 20px;
+
+}
+
+
+
+
+#botonNueva {
+  margin: 10px;
+}
+.card {
+  display: grid;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
