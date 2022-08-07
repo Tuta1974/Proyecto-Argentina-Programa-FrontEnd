@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'http://localhost:8080/auth/';
+  authURL = 'https://backend-tuta.herokuapp.com';
 
 
   constructor(private httpclient: HttpClient) { }

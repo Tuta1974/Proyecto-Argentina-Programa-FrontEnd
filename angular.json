@@ -54,6 +54,13 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+              "optimization": {
+                "scripts": true,
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                }
+              },
               "outputHashing": "all"
             },
             "development": {
@@ -72,6 +79,7 @@
           "configurations": {
             "production": {
               "browserTarget": "Porfolio_GustavoRomero:build:production"
+
             },
             "development": {
               "browserTarget": "Porfolio_GustavoRomero:build:development"
@@ -85,6 +93,7 @@
             "browserTarget": "Porfolio_GustavoRomero:build"
           }
         },
+
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {

@@ -7,7 +7,7 @@ import { Skill } from '../model/skills';
   providedIn: 'root'
 })
 export class SkillsService {
-  skillsURL = 'http://localhost:8080/skills/';
+  skillsURL = 'https://backend-tuta.herokuapp.com';
 
   constructor(private httpClient: HttpClient) { }
 
