@@ -10,7 +10,7 @@ import { persona } from '../model/persona.model';
 })
 
 export class PersonaService {
-  URL= 'https://backend-tuta.herokuapp.com' ;
+  URL= 'https://backend-tuta.herokuapp.com/personas/' ;
 
   constructor(private http: HttpClient) { }
 

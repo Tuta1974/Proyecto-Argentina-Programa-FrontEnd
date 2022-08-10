@@ -8,7 +8,7 @@ import { Proyecto } from '../model/proyecto';
   providedIn: 'root'
 })
 export class ProyectoService {
-  expURL = 'https://backend-tuta.herokuapp.com/';
+  expURL = 'https://backend-tuta.herokuapp.com/proyectos/';
 
   constructor(private httpClient: HttpClient) { }
 

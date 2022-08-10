@@ -7,7 +7,7 @@ import { Educacion } from 'src/app/model/educacion';
   providedIn: 'root'
 })
 export class EducacionService {
-  eduURL = 'https://backend-tuta.herokuapp.com';
+  eduURL = 'https://backend-tuta.herokuapp.com/edu/';
 
   constructor(private httpClient: HttpClient) { }
 
