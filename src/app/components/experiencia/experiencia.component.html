@@ -10,7 +10,7 @@
     <div class="card col-5 p-2 m-2" *ngFor="let Experiencia of expe">
       <div class="card-header d-flex justify-content-between bg-dark  text-light" >
         <h3>{{Experiencia.nombreE}}</h3>
-        <button class="btn btn-secondary" routerLink="/editEdu/{{Experiencia.id}}" *ngIf="isLogged" >
+        <button class="btn btn-secondary" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged" >
           <i class="bi bi-pencil-fill"></i></button>
         <button class="btn btn-danger" (click)="delete(Experiencia.id)" *ngIf="isLogged">
           <i class="bi bi-trash-fill"></i></button>
